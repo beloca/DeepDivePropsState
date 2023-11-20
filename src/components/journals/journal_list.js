@@ -24,7 +24,7 @@ export default class JournalList extends Component{
     this.setState({ journalData: [], isOpen: false });
     };
 
-    ShowAllEntries =() => {
+    showAllEntries =() => {
         this.setState({journalData:rawJournalData, isOpen:true });
     };
 
@@ -53,7 +53,7 @@ export default class JournalList extends Component{
                 {journalEntries}
 
                 <button onClick={this.clearEntries}>Clear Journal Entries</button>
-                <button onClick={this.ShowAllEntries}>Show all Entries</button>
+                <button onClick={this.showAllEntries}>Show all Entries</button>
                 <button onClick={this.toogleStatus}>Toogle Entries</button>
             </div>
         );
